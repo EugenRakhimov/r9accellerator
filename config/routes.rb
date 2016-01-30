@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  resources :alerts
   get 'dashboard/index'
 
-  resources :alerts
   resources :shipments
   resources :accounts
   root to: 'visitors#index'

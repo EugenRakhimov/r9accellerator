@@ -1,18 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Watch param:</strong>
+  <%= @alert.watch_param %>
+</p>
+
+<p>
   <strong>Condition:</strong>
   <%= @alert.condition %>
 </p>
 
 <p>
-  <strong>Action:</strong>
-  <%= @alert.action %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @alert.user %>
+  <strong>Comparer:</strong>
+  <%= @alert.comparer %>
 </p>
 
 <%= link_to 'Edit', edit_alert_path(@alert) %> |

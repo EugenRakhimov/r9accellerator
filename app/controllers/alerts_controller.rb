@@ -1,6 +1,6 @@
 class AlertsController < ApplicationController
   before_action :set_alert, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
+
   # GET /alerts
   # GET /alerts.json
   def index
@@ -69,6 +69,6 @@ class AlertsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def alert_params
-      params.require(:alert).permit(:condition, :action, :user_id)
+      params.require(:alert).permit(:watch_param, :condition, :comparer)
     end
 end

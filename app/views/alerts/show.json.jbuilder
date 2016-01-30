@@ -1,1 +1,1 @@
-json.extract! @alert, :id, :condition, :action, :user_id, :created_at, :updated_at
+json.extract! @alert, :id, :watch_param, :condition, :comparer, :created_at, :updated_at

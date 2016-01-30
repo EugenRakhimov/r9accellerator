@@ -1,8 +1,8 @@
 FactoryGirl.define do
   factory :alert do
-    condition "MyString"
-action "MyString"
-user nil
+    watch_param 1
+condition 1
+comparer 1
   end
 
 end
