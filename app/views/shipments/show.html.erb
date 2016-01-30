@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Custom number:</strong>
+  <%= @shipment.custom_number %>
+</p>
+
+<p>
+  <strong>Gst:</strong>
+  <%= @shipment.gst %>
+</p>
+
+<p>
+  <strong>Payment date:</strong>
+  <%= @shipment.payment_date %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @shipment.status %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @shipment.user %>
+</p>
+
+<%= link_to 'Edit', edit_shipment_path(@shipment) %> |
+<%= link_to 'Back', shipments_path %>
