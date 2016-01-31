@@ -1,9 +1,9 @@
 <%= simple_form_for(@alert) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :watch_param %>
-    <%= f.input :condition %>
+  <div class="form-inputs form-inline">
+    <%= f.select(:watch_param,[["balance",1],["credit limit",2],["new shipment",3]]) %>
+    <%= f.select(:condition,[["less",1],["equal",2],["more",3]]) %>
     <%= f.input :comparer %>
   </div>
 
